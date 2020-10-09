@@ -8,7 +8,7 @@ class MovieCard extends Component {
     };
 
     componentDidMount() {
-        axios.get(`http://www.omdbapi.com/?i=${this.props.movieID}&apikey=55e809a1`)
+        axios.get(`https://www.omdbapi.com/?i=${this.props.movieID}&apikey=55e809a1`)
         .then(res => res.data)
         .then(res => {
             console.log('resposta', res);
